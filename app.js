@@ -52,6 +52,13 @@ app.get('/about', function (req, res) {
   });
 });
 
+app.get('/projects', function (req, res) {
+  res.render('projects',{
+    pageTitle : 'Projects Page',
+    welcomeMessage : 'This is projects page'
+  });
+});
+
 
 
 app.get('/bad',(req,res) =>{
